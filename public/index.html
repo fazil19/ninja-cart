@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <base href="/">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A sample display for the Ninja Cart product.">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>NinjaKart</title>
+        <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto:400,700'>
+        <link rel="stylesheet" href="./jspm_packages/github/angular/bower-material@master/angular-material.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="./assets/css/app.css"/>
+    </head>
+    <body ng-cloak layout="column" ng-controller="mainController">
+        <navbar data="navbarData" cart-items="itemsInCart"></navbar>
+        <md-content layout-padding id="content-container">
+            <header data="headerData"></header>
+            <div layout="column" layout-padding>
+                <div layout="column" layout-gt-sm="row">
+                    <div flex="65">
+                        <carousel data="carouselData"></carousel>
+                    </div>
+                    <div flex="35" class="panel-border border-container" id="sidebar-container">
+                        <sidebar data="sidebarData" on-cart-change="updateCart($event.itemsToAdd)"></sidebar>
+                    </div>
+                </div>
+                <detail-tabs data="detailTabsData"></detail-tabs>
+            </div>
+        </md-content>
+
+        <!-- inject:js -->
+        <script src="jspm_packages/system.js"></script>
+        <script src="config.js"></script>
+        <script>
+            System.import('app/app.bootstrap').catch(console.error.bind(console));
+        </script>
+        <!-- endinject -->
+    </body>
+</html>

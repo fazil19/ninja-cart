@@ -1,0 +1,140 @@
+html, body {
+    font-family: 'Roboto', sans-serif;
+    font-size: .95em;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+
+[ng-cloak] {
+    display: none;
+}
+
+#navbar-container {
+    padding: 0 100px;
+}
+
+#content-container {
+    padding: 25px 100px;
+}
+
+.border-container {
+    border: 1px solid rgba(0,0,0,0.12);
+    background-color: rgba(0,0,0,0.02);
+}
+
+/* header styles */
+.product-title {
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+/* sidebar styles */
+#sidebar-container {
+    padding: 15px 5px;
+}
+
+.price-subtitle {
+    font-size:.5em;
+    color: #3f3f3f;
+}
+
+/* tab styles */
+.detail-tab-content {
+    margin: 0;
+}
+
+.review-container {
+    border: 1px solid rgba(0,0,0,0.12);
+}
+
+.review-title-section {
+    padding: 1px 1px 1px 16px;
+}
+
+.review-title {
+    margin-bottom: 5px;
+}
+
+.review-subtitle {
+    font-style: italic;
+}
+
+.review-helpful {
+    color: rgba(0,0,0,0.54);
+}
+
+/* star rating component styles */
+.star-rating {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+.star-rating .star {
+    color: #ddd;
+    text-shadow: .05em .05em #aaa;
+    list-style-type: none;
+    display: inline-block;
+    width: 18px;
+}
+
+.material-icons.starFilled {
+    color: #fd0;
+}
+
+/* material icon sizes */
+.material-icons.md-17 {
+    font-size: 1.1em;
+}
+
+/* material style overrides */
+md-list-item {
+    margin-top: -24px;
+}
+
+/* media queries */
+@media (max-width: 480px) {
+    #navbar-container {
+        padding: 0 5px;
+    }
+
+    #content-container {
+        padding: 5px 5px;
+    }
+
+    .md-tab {
+        padding: 10px 2px;
+    }
+
+    .md-tab span {
+        font-size: .7em;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 840px) {
+    #navbar-container {
+        padding: 0 15px;
+    }
+
+    #content-container {
+        padding: 10px 25px;
+    }
+
+    .md-tab {
+        padding: 10px 10px;
+    }
+
+    .md-tab span {
+        font-size: .8em;
+    }
+}
+
+@media (min-width: 840px) and (max-width: 960px) {
+    #navbar-container {
+        padding: 0 15px;
+    }
+
+    #content-container {
+        padding: 10px 25px;
+    }
+}
