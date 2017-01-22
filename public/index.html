@@ -13,6 +13,10 @@
         <link rel="stylesheet" href="./assets/css/app.css"/>
     </head>
     <body ng-cloak layout="column" ng-controller="mainController">
+        <div layout="row" layout-sm="column" layout-align="space-around" ng-show="isLoading">
+            <md-progress-circular md-mode="indeterminate"></md-progress-circular>
+        </div>
+
         <navbar data="navbarData" cart-items="itemsInCart"></navbar>
         <md-content layout-padding id="content-container">
             <header data="headerData"></header>

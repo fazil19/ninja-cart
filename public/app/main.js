@@ -11,6 +11,7 @@ class MainController {
 	constructor(dataService, $scope) {
 		console.info('main loaded');
 
+		$scope.isLoading = true;
 		$scope.itemsInCart = 0;
 
 		$scope.updateCart = (newItems) => {
@@ -51,6 +52,8 @@ class MainController {
 				productReviews: data.CustomerReview[0].Reviews,
 				productDetails: this.createProductDetails(data)
 			};
+
+			$scope.isLoading = false;
 		});
 	}
 
