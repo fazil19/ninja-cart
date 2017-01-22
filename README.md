@@ -1,6 +1,6 @@
 # Ninja Cart
 
-An inventory app for the Ninja Blender. Application built using Angular 1.5, Angular Material, ES6, Babel, SystemJS and JSPM.
+An inventory app for the Ninja Blender. Application built using Angular 1.5, Angular Material, ES6, Babel, SystemJS and JSPM.  View the applicaton [here](http://schnogz.com/projects/ninja-kart/index.html).
 
 ### Setup
 
